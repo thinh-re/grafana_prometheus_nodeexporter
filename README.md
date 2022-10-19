@@ -43,3 +43,8 @@ This will start 3 docker containers `node_exporter`, `prometheus`, `grafana`
 ```Shell
 sudo docker compose -f docker-compose.yml stop
 ```
+
+## Tested environments
+
+- Ubuntu 22.04 [5.19.0-76051900-generic]
+- Docker version 20.10.19
