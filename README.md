@@ -37,6 +37,14 @@ This will start 3 docker containers `node_exporter`, `prometheus`, `grafana`
 <img src="images/grafana-dashboard.png">
 </details>
 
+<details>
+<summary> Restart dockers. </summary>
+</details>
+
+## How to restart
+```Shell
+sudo docker compose -f docker-compose.yml restart
+```
 
 ## How to stop
 
