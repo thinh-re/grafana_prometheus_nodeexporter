@@ -48,16 +48,16 @@ services:
     networks:
       - monitoring
 
-  grafana:
-    image: grafana/grafana-enterprise:latest
-    container_name: grafana
-    restart: unless-stopped
-    ports:
-      - 3000:3000
-    expose:
-      - 3000
-    networks:
-      - monitoring
-    environment:
-      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+  # grafana:
+  #   image: grafana/grafana-enterprise:latest
+  #   container_name: grafana
+  #   restart: unless-stopped
+  #   ports:
+  #     - 3000:3000
+  #   expose:
+  #     - 3000
+  #   networks:
+  #     - monitoring
+  #   environment:
+  #     - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
     
