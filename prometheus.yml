@@ -27,14 +27,4 @@ scrape_configs:
 
     static_configs:
       # - targets: ["<hostname>:9100"]
-      - targets: ["localhost:9100"]
-
-    # remote_write:
-    #   - url: https://prometheus-prod-10-prod-us-central-0.grafana.net/api/prom/push
-    #     basic_auth:
-    #       username: 578913
-    #       password: eyJrIjoiMGI2YzVhNWI1ODgyNDA3MzJiYjQ4MDZjMWNiMWU5YWNlNGIzM2YwYyIsIm4iOiJwb3BvcyIsImlkIjo3MTI0Njd9
-
-  # - job_name: "node"
-  #   static_configs:
-  #   - targets: ["node-exporter:9100"]
+      - targets: ["172.16.0.241:9100", "172.16.1.64:9100", "172.16.0.250:9100"]
